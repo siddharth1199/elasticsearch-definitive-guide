@@ -83,7 +83,7 @@ GET /_search
           "query": { "match": { "description": "garden" }}
         }},
         { "constant_score": {
-          "boost":   2 <1>
+          "boost":   2, <1>
           "query": { "match": { "description": "pool" }}
         }}
       ]
@@ -128,7 +128,7 @@ GET /_search
           "query": { "match": { "features": "garden" }}
         }},
         { "constant_score": {
-          "boost":   2
+          "boost":   2,
           "query": { "match": { "features": "pool" }}
         }}
       ]
